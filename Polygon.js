@@ -11,8 +11,10 @@ this.polygonImage = loadImage("polygon.png")
 this.x =x;
 this.y=y;
 this.r=r;
-this.body=Bodies.circle(this.x,this.y,this.r/2,options)
-World.add(world,this.body);
+       
+  this.body=Bodies.circle(this.x,this.y,this.r/2,options)
+  this.polygon.scale = 0.05
+  World.add(world,this.body);
     }
 
     display(){
